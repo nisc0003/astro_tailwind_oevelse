@@ -1,15 +1,60 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+  <article>
+    <h1>Index overskrift</h1>
+    <Button>KNAPPELADE</Button>
+    <p>
+      Link til <Link href="https://www.kea.dk" target="_blank"
+        >En anden side</Link
+      >
+    </p>
+    <Image src={thumbsup} alt="" />
+  </article>
+
+  <h1>Køb bogen</h1>
+  <form id="form">
+    <div>
+      <label for="quantity">Antal:</label>
+      <input type="number" id="quantity" name="quantity" min="1" />
+    </div>
+    <div>
+      <input type="radio" id="postnord" name="forsendelse" />
+      <label for="postnord">PostNord</label>
+
+      <input type="radio" id="afhent" name="forsendelse" />
+      <label for="afhent">Afhent selv</label><br />
+    </div>
+    <div>
+      <label for="text">Nnavn:</label>
+      <input type="text" value="Anders And" />
+    </div>
+    <div>
+      <label for="text">Adresse:</label>
+      <input type="text" value="Paradisæblevej 8" />
+    </div>
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" value="anders@andeby.dk" />
+    </div>
+    <div>
+      <label for="text">Postnummer & by:</label>
+      <input type="text" value="0900" />
+      <input type="text" value="Andeby C" />
+    </div>
+    <div>
+      <label for="tel">Telefon:</label>
+      <input type="tel" value="555-555" />
+    </div>
+
+    <input type="checkbox" til nyhedsbrev />
+    <label for="checkbox">Ja tak til nyhedsbreve og tilbud</label>
+  </form>
+  <Button type="submit" form="form">Til betaling</Button>
 </MainLayout>
