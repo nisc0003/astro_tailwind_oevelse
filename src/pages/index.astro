@@ -17,44 +17,65 @@ import thumbsup from "../assets/images/thumbsup.png";
     </p>
     <Image src={thumbsup} alt="" />
   </article>
-
-  <h1>Køb bogen</h1>
-  <form id="form">
-    <div>
-      <label for="quantity">Antal:</label>
-      <input type="number" id="quantity" name="quantity" min="1" />
-    </div>
-    <div>
-      <input type="radio" id="postnord" name="forsendelse" />
-      <label for="postnord">PostNord</label>
-
-      <input type="radio" id="afhent" name="forsendelse" />
-      <label for="afhent">Afhent selv</label><br />
-    </div>
-    <div>
-      <label for="text">Nnavn:</label>
-      <input type="text" value="Anders And" />
-    </div>
-    <div>
-      <label for="text">Adresse:</label>
-      <input type="text" value="Paradisæblevej 8" />
-    </div>
-    <div>
-      <label for="email">E-mail:</label>
-      <input type="email" value="anders@andeby.dk" />
-    </div>
-    <div>
-      <label for="text">Postnummer & by:</label>
-      <input type="text" value="0900" />
-      <input type="text" value="Andeby C" />
-    </div>
-    <div>
-      <label for="tel">Telefon:</label>
-      <input type="tel" value="555-555" />
-    </div>
-
-    <input type="checkbox" til nyhedsbrev />
-    <label for="checkbox">Ja tak til nyhedsbreve og tilbud</label>
-  </form>
-  <Button type="submit" form="form">Til betaling</Button>
 </MainLayout>
+<section class="flex flex-col gap-3 p-6">
+  <!--  -->
+  <div>
+    <h2 class="mt-6 text-2xl uppercase font-semibold bg-red-200">Øvelse 1</h2>
+    <Button>KNAPPELADE</Button>
+    <Button>KNAPPELADE</Button>
+    <Button>KNAPPELADE</Button>
+    <Button>KNAPPELADE</Button>
+    <Button>KNAPPELADE</Button>
+  </div>
+  <!--  -->
+  <h2 class="mt-6 text-2xl uppercase font-semibold bg-blue-200">Øvelse 2</h2>
+  <!--  -->
+  <div>
+    <h2 class="mt-6 text-2xl uppercase font-semibold bg-yellow-200">
+      Øvelse 3
+    </h2>
+    <div>
+      <h2>Køb bogen</h2>
+      <form id="form">
+        <div>
+          <label for="quantity">Antal:</label>
+          <input type="number" id="quantity" name="quantity" min="1" />
+        </div>
+        <div>
+          <input type="radio" id="postnord" name="forsendelse" />
+          <label for="postnord">PostNord</label>
+          <input type="radio" id="afhent" name="forsendelse" />
+          <label for="afhent">Afhent selv</label><br />
+        </div>
+        <div>
+          <label for="text">Nnavn:</label>
+          <input type="text" value="Anders And" />
+        </div>
+        <div>
+          <label for="text">Adresse:</label>
+          <input type="text" value="Paradisæblevej 8" />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" value="anders@andeby.dk" />
+        </div>
+        <div>
+          <label for="text">Postnummer & by:</label>
+          <input type="text" value="0900" />
+          <input type="text" value="Andeby C" />
+        </div>
+        <div>
+          <label for="tel">Telefon:</label>
+          <input type="tel" value="555-555" />
+        </div>
+      </form>
+      <input type="checkbox" />
+      <label for="checkbox">Ja tak til nyhedsbreve og tilbud</label>
+    </div>
+    <Button type="submit" form="form">Til betaling</Button>
+  </div>
+  <div>
+    <h2 class="mt-6 text-2xl uppercase font-semibold bg-green-200">Øvelse 4</h2>
+  </div>
+</section>
