@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: "montserrat_itallic";
+  src: url("Montserrat-Italic-VariableFont_wght") format("truetype");
+}
+
+@font-face {
   font-family: "inter";
   src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 }
@@ -19,15 +24,22 @@
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #ffbda8;
-  --color-primary-500: #ff6d40;
-  --color-primary-600: #db3400;
-  --color-secondary-400: #66c2ff;
-  --color-secondary-500: #0099ff;
-  --color-secondary-600: #005c99;
+  --color-primary-400: #ff9e80;
+  --color-primary-500: #ff6f3c;
+  --color-primary-600: #d63800;
+  --color-secondary-400: #80d0ff;
+  --color-secondary-500: #3cafff;
+  --color-secondary-600: #3675a1;
+  --color-dark: #1b1b1b;
+  --color-background: #f9f5f0;
+  --color-dot3-500: #ffd13c;
+  --color-dot4-500: #943cff;
+  --color-dot5-500: #3cff8d;
+  --color-dot6-500: #ff3c66;
 
   /*Typografi */
   --font-display: "montserrat", monospace;
+  --font-display_itallic: "montserrat_itallic", monospace;
   --font-sans: "inter", sans-serif;
 }
 

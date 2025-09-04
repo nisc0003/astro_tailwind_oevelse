@@ -1,0 +1,30 @@
+---
+const {
+  kategori = "Kategori",
+  skills = [],
+  teksttype = "konsultativ",
+  stylingclasses = "",
+  dotColor = "text-white", // Tailwind color class for the dot
+} = Astro.props;
+
+// Tailwind-styles for teksten
+const sizeClasses = {
+  konsultativ: "text-sm italic font-sans",
+  hvid_konsulativ:
+    "text-xl not-italic font-sans itallic mt-3 mb-6 text-white uppercase",
+};
+
+// Overskrift styling (anden font og størrelse)
+const headingClasses =
+  "text-2xl font-display itallic font-extrabold mb-1 uppercase";
+---
+
+<!-- skills.join(", ") tager alle elementerne i arrayet skills (står skrevet i html) og laver dem til tekst. -->
+<div class:list={[sizeClasses[teksttype], stylingclasses]}>
+  <p class={headingClasses}>
+    <span class={dotColor}>●</span>
+    {kategori}:
+  </p>
+
+  <p><span class="text-transparent pr-1.5">●</span> {skills.join(", ")}</p>
+</div>
