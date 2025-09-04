@@ -3,24 +3,26 @@ import me2 from "../assets/images/mig.png";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
+import Text from "../components/Text.astro";
+import Heading from "../components/Heading.astro";
 ---
 
 <section class="col-start-1 col-span-12 grid mr-[5vw] ml-[5vw]">
   <Image src={me2} alt="" class="rounded-4xl" />
   <!-- <Image src={main} alt="" /> -->
   <div>
-    <h2 class="text-3xl font-display font-bold mb-4 uppercase">Om mig</h2>
+    <Heading class="">Om mig</Heading>
     <div class="mb-10">
-      <p class="font-sans">
+      <Text>
         Jeg studerer multimediedesign og har en stor interesse for digitalt
         design, brugeroplevelser og visuel identitet. Jeg kan godt lide at
         arbejde i krydsfeltet mellem design og kode, hvor jeg især har erfaring
         med HTML, CSS og JavaScript. Jeg arbejder meget med at lave enkle,
         responsive webløsninger og brugerflader, der fungerer godt for folk i
         praksis.
-      </p>
+      </Text>
       <br />
-      <p class="font-sans">
+      <Text>
         Udover design har jeg en kreativ baggrund inden for musik, hvor jeg i
         over 8 år har produceret og arbejdet med lyd. Den erfaring har givet mig
         et godt øje for detaljer og æstetik, som jeg også tager med ind i mit
@@ -29,13 +31,13 @@ import { Image } from "astro:assets";
         Jeg bruger især Illustrator og Figma til grafiske elementer, visuelle udtryk
         og UI-design, men har også erfaring med Photoshop samt lidt video i Premiere
         Pro/After Effects.
-      </p>
+      </Text>
       <br />
-      <p class="font-sans">
+      <Text>
         Som multimediedesigner motiveres jeg af at skabe løsninger, der både ser
         godt ud, fungerer teknisk og bygger på research, så brugeren altid får
         en god oplevelse.
-      </p>
+      </Text>
     </div>
     <div>
       <Link

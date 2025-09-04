@@ -1,6 +1,7 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
+import text from "../components/Text.astro";
 ---
 
 <header x-data="{ showmenu: false }" class="bg-secondary-400">

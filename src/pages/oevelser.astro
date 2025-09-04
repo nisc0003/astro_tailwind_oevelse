@@ -5,6 +5,8 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import "./index.astro";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
 ---
 
 <MainLayout title="Titel">
@@ -289,6 +291,53 @@ import "./index.astro";
         class="mt-6 text-2xl uppercase font-semibold bg-purple-200 p-4 rounded"
       >
         Øvelse 6
+      </h2>
+    </div>
+    <!---------------------------------- Øvelse 7------------------------------------>
+    <div>
+      <h2 class="mt-6 text-2xl uppercase font-semibold bg-lime-200 p-4 rounded">
+        Øvelse 7
+      </h2>
+      <Text teksttype="konsultativ"
+        >Konsultativ ----- Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Quae, mollitia.</Text
+      >
+      <Text teksttype="brødtekst"
+        >Brødtekst ----- Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Architecto, id!</Text
+      >
+    </div>
+    <!---------------------------------- Øvelse 8------------------------------------>
+    <div>
+      <h2 class="mt-6 text-2xl uppercase font-semibold bg-pink-200 p-4 rounded">
+        Øvelse 8
+      </h2>
+      <Heading htmlheading="h1" size="large">Heading 1 large</Heading>
+      <Heading htmlheading="h2" size="medium">Heading 2 medium</Heading>
+      <Heading htmlheading="h3" size="small">Heading 3 small</Heading>
+      <Heading htmlheading="h1" size="large" font="display"
+        >Heading 1 large display</Heading
+      >
+      <Heading htmlheading="h2" size="medium" font="display"
+        >Heading 2 medium display</Heading
+      >
+      <Heading htmlheading="h3" size="small" font="display"
+        >Heading 3 small display</Heading
+      >
+      <Heading htmlheading="h1" size="large" font="serif"
+        >Heading 1 large serif</Heading
+      >
+      <Heading htmlheading="h2" size="medium" font="serif"
+        >Heading 2 medium serif</Heading
+      >
+      <Heading htmlheading="h3" size="small" font="serif"
+        >Heading 3 small serif</Heading
+      >
+    </div>
+    <!---------------------------------- Øvelse 9------------------------------------>
+    <div>
+      <h2 class="mt-6 text-2xl uppercase font-semibold bg-cyan-200 p-4 rounded">
+        Øvelse 9
       </h2>
     </div>
   </section>
