@@ -6,7 +6,8 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import hero from "../assets/images/hero.svg";
 import hero_text from "../assets/images/hero_text.svg";
-import main from "../assets/images/main.svg";
+// import main from "../assets/images/main.svg";
+import me2 from "../assets/images/mig.png";
 import me1 from "../assets/images/mebackground.png";
 import "./oevelser.astro";
 ---
@@ -22,58 +23,67 @@ import "./oevelser.astro";
   <article class="grid grid-cols-12 grid-rows-auto bg-gray-100">
     <!-- hero section -->
     <section
-      class="col-start-1 col-span-10 row-start-1 row-span-6 relative grid grid-cols-10"
+      class="col-start-1 col-span-12 mr-[16.6vw] row-start-1 row-span-6 relative grid grid-cols-10"
     >
       <Image
         src={hero}
         alt="Hero background"
-        class="col-span-10 row-start-1 row-span-12 w-full h-auto object-cover"
+        class="col-span-10 w-full h-auto object-cover"
       />
       <Image
         src={me1}
         alt="Overlay"
-        class="absolute row-start-2 col-start-5 col-span-4 left-0 right-0 w-full h-auto object-contain"
+        class="absolute col-start-5 col-span-4 left-0 right-0 w-full h-auto object-contain mt-10"
       />
       <Image
         src={hero_text}
         alt="Hero text"
-        class="absolute col-span-10 row-start-1 row-span-12 w-full h-auto object-cover z-20"
+        class="absolute col-span-10 w-full h-auto object-cover z-20"
       />
     </section>
 
     <!-- main section -->
-    <section class="col-start-3 col-span-12 row-start-5 row-span-6 grid">
-      <Image src={main} alt="" />
-      <h2 class="text-3xl font-bold mt-4">Om mig</h2>
-      <p>
-        Jeg studerer multimediedesign og har en stor interesse for digitalt
-        design, brugeroplevelser og visuel identitet. Jeg kan godt lide at
-        arbejde i krydsfeltet mellem design og kode, hvor jeg især har erfaring
-        med HTML, CSS og JavaScript. Jeg arbejder meget med at lave enkle,
-        responsive webløsninger og brugerflader, der fungerer godt for folk i
-        praksis.
-      </p>
-      <p>
-        Udover design har jeg en kreativ baggrund inden for musik, hvor jeg i
-        over 8 år har produceret og arbejdet med lyd. Den erfaring har givet mig
-        et godt øje for detaljer og æstetik, som jeg også tager med ind i mit
-        visuelle arbejde.
-      </p>
-      <p>
-        Jeg bruger især Illustrator og Figma til grafiske elementer, visuelle
-        udtryk og UI-design, men har også erfaring med Photoshop samt lidt video
-        i Premiere Pro/After Effects.
-      </p>
-      <p>
-        Som multimediedesigner motiveres jeg af at skabe løsninger, der både ser
-        godt ud, fungerer teknisk og bygger på research, så brugeren altid får
-        en god oplevelse.
-      </p>
-      <p>
-        Link til <Link href="" target="_blank" variant="primary" size="small"
-          >Primær small</Link
+    <!-- <section class="col-start-1 col-span-12 grid mb-10 row-start-5 row-span-6 ml-[16.6vw]"> -->
+    <section class="col-start-1 col-span-12">
+      <Image src={me2} alt="" />
+      <!-- <Image src={main} alt="" /> -->
+      <h2 class="text-3xl font-bold mb-4">Om mig</h2>
+      <div class="mb-10">
+        <p>
+          Jeg studerer multimediedesign og har en stor interesse for digitalt
+          design, brugeroplevelser og visuel identitet. Jeg kan godt lide at
+          arbejde i krydsfeltet mellem design og kode, hvor jeg især har
+          erfaring med HTML, CSS og JavaScript. Jeg arbejder meget med at lave
+          enkle, responsive webløsninger og brugerflader, der fungerer godt for
+          folk i praksis.
+        </p>
+        <br />
+        <p>
+          Udover design har jeg en kreativ baggrund inden for musik, hvor jeg i
+          over 8 år har produceret og arbejdet med lyd. Den erfaring har givet
+          mig et godt øje for detaljer og æstetik, som jeg også tager med ind i
+          mit visuelle arbejde.
+          <br />
+          Jeg bruger især Illustrator og Figma til grafiske elementer, visuelle udtryk
+          og UI-design, men har også erfaring med Photoshop samt lidt video i Premiere
+          Pro/After Effects.
+        </p>
+        <br />
+        <p>
+          Som multimediedesigner motiveres jeg af at skabe løsninger, der både
+          ser godt ud, fungerer teknisk og bygger på research, så brugeren altid
+          får en god oplevelse.
+        </p>
+      </div>
+      <div>
+        <Link
+          href="https://www.kea.dk"
+          target="_blank"
+          variant="secondary"
+          size="medium">Sekundær medium</Link
         >
-      </p>
+      </div>
     </section>
+    <section class=""></section>
   </article>
 </MainLayout>
