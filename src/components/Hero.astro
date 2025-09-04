@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import hero from "../assets/images/hero.svg";
+import hero_text from "../assets/images/hero_text.svg";
+import me1 from "../assets/images/mebackground.png";
+---
+
+<!-- hero section -->
+<section
+  class="col-start-1 col-span-12 mr-[16.6vw] row-start-1 row-span-6 relative grid grid-cols-10"
+>
+  <Image
+    src={hero}
+    alt="Hero background"
+    class="col-span-10 w-full h-auto object-cover"
+  />
+  <Image
+    src={me1}
+    alt="Overlay"
+    class="absolute col-start-5 col-span-4 left-0 right-0 w-full h-auto object-contain mt-10 rounded-4xl"
+  />
+  <Image
+    src={hero_text}
+    alt="Hero text"
+    class="absolute col-span-10 w-full h-auto object-cover z-20"
+  />
+</section>
