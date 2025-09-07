@@ -10,7 +10,9 @@ import List from "../components/List.astro";
 
 <section class="flex flex-col items-start gap-8 px-[5vw]">
   <!-- Top image / white box -->
-  <div class="bg-white shadow-lg rounded-4xl p-10 inline-block">
+  <div
+    class="bg-white shadow-lg rounded-4xl p-10 inline-block animate-fade-up animate-once animate-duration-1000 animate-delay-[50ms] animate-normal"
+  >
     <Image src={me2} alt="" class="rounded-4xl mb-20 place-self-center" />
     <!-- Heading -->
     <Heading htmlheading="h2" size="medium" font="display" color="dark">
@@ -44,10 +46,10 @@ import List from "../components/List.astro";
       <Link
         href="https://www.kea.dk"
         target="_blank"
-        variant="secondary"
+        variant="primary"
         size="large"
       >
-        Sekundær medium
+        Kontakt mig
       </Link>
     </div>
   </div>
@@ -118,22 +120,6 @@ import List from "../components/List.astro";
         teksttype="hvid_konsulativ"
         dotColor="text-dot6-500 pr-2"
       />
-
-      <!-- <Text teksttype="hvid_konsulativ"
-        >Webdesign & kode - HTML, CSS, JavaScript, fokus på UX</Text
-      >
-      <Text teksttype="hvid_konsulativ"
-        >UI Design - intuitive og responsive brugerflader</Text
-      >
-      <Text teksttype="hvid_konsulativ"
-        >Grafisk design - Illustrator, Photoshop & video</Text
-      >
-      <Text teksttype="hvid_konsulativ"
-        >SoMe & digital strategi - visuel planlægning og formidling</Text
-      >
-      <Text teksttype="hvid_konsulativ"
-        >Lyd & produktion - 8+ års erfaring med musik og lydæstetik</Text
-      > -->
     </div>
   </div>
 </section>

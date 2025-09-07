@@ -4,17 +4,20 @@ const currentPath = pathname.slice(1); // remove the first "/"
 import text from "../components/Text.astro";
 ---
 
-<header x-data="{ showmenu: false }" class="bg-secondary-400">
+<header x-data="{ showmenu: false }" class="bg-primary-500 shadow-xl/30">
   <div
     id="navbar"
     class="container mx-auto p-4 flex flex-row justify-between items-center"
   >
     <div id="logo" class="">
-      <a href="#" class="font-display text-4xl"
-        >Astro-Tailwind starter - udvidet udgave E25</a
+      <a href="#" class="font-display font-bold text-3xl text-white uppercase"
+        >Nicolai Schou</a
       >
     </div>
-    <nav id="desktopmenu" class="hidden lg:block">
+    <nav
+      id="desktopmenu"
+      class="hidden lg:block text-white font-display text-l font-bold"
+    >
       <ul class="flex flex-row gap-4">
         <li class="">
           <a href="/" class={currentPath === "" ? "font-bold" : ""}>Forside</a>
@@ -29,13 +32,15 @@ import text from "../components/Text.astro";
         <li class="">
           <a
             href="/oevelser/"
-            class={currentPath === "oevelser/" ? "font-bold" : ""}>Øvelser</a
+            class={currentPath === "oevelser/" ? "font-bold " : ""}>Øvelser</a
           >
         </li>
       </ul>
     </nav>
-    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
-      >Menu</button
+    <button
+      id="burgermenu"
+      class="lg:hidden text-white font-display font-bold"
+      x-on:click="showmenu = ! showmenu">Menu</button
     >
   </div>
   <nav
@@ -46,7 +51,9 @@ import text from "../components/Text.astro";
     x-on:click="showmenu = false"
     x-on:click.outside="showmenu = false"
   >
-    <ul class="border-t-2 border-b-2 border-black">
+    <ul
+      class="border-t-2 border-b-2 border-primary-500 text-white font-display font-bold"
+    >
       <li class="text-center py-2">
         <a href="/" class={currentPath === "" ? "font-bold" : ""}>Forside</a>
       </li>
